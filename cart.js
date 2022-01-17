@@ -1,3 +1,3 @@
-Shopify.onItemAdded = function(line_item) {
-    console.log(line_item.title + ' was added to your shopping cart.');
-};
+Shopify.getCart(function (result) {
+	console.log("The following items are in the cart:", result);
+});
